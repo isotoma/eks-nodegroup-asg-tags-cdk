@@ -30,7 +30,7 @@
         "lint": "npm run -- _lint --fix",
         "lint-check": "npm run -- _lint --max-warnings 0",
         "clean-provider": "rm -rf provider/build/",
-        "compile-provider": "npm run clean-provider && npx esbuild --external:aws-sdk --bundle --outdir=./provider/build ./provider/index.ts"
+        "compile-provider": "npm run clean-provider && npx esbuild --platform=node --target=node16 --minify-syntax --external:aws-sdk --bundle --outdir=./provider/build ./provider/index.ts"
     },
     "peerDependencies": {
         "aws-cdk-lib": "^2.0.0",
