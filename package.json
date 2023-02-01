@@ -1,6 +1,6 @@
 {
     "name": "eks-nodegroup-asg-tags-cdk",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "To apply tags to the ASG for an EKS nodegroup",
     "license": "MIT",
     "author": {
@@ -39,7 +39,6 @@
     "devDependencies": {
         "@types/jest": "^24.0.0",
         "@types/node": ">=10",
-        "@types/node": ">=10",
         "@typescript-eslint/eslint-plugin": "5.50.0",
         "@typescript-eslint/parser": "5.50.0",
         "auto-changelog": "^1.16.2",
@@ -52,6 +51,5 @@
         "prettier": "2.8.3",
         "ts-jest": "29.0.3",
         "typescript": ">=4.0.0"
-
     }
 }
