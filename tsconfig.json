@@ -22,5 +22,8 @@
   },
   "include": [
     "index.ts"
+  ],
+  "exclude": [
+      "provider/**",
   ]
 }
