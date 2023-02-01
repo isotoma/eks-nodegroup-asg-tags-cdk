@@ -1,5 +1,11 @@
 ### Changelog
 
+#### [1.1.1](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/compare/1.1.0...1.1.1)
+
+> 1 February 2023
+
+- Fix esbuild options [`#3`](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/pull/3)
+
 #### [1.1.0](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/compare/1.0.0...1.1.0)
 
 > 1 February 2023
