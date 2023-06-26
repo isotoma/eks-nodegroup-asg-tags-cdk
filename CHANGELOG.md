@@ -1,5 +1,11 @@
 ### Changelog
 
+#### [1.1.2](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/compare/1.1.1...1.1.2)
+
+> 26 June 2023
+
+- Docs [`f7bb1b8`](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/commit/f7bb1b8f2cf07db19fe8069e03e0b9d425e3e7f6)
+
 #### [1.1.1](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/compare/1.1.0...1.1.1)
 
 > 1 February 2023

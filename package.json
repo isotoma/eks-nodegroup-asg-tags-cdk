@@ -1,6 +1,6 @@
 {
     "name": "eks-nodegroup-asg-tags-cdk",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "To apply tags to the ASG for an EKS nodegroup",
     "license": "MIT",
     "author": {
