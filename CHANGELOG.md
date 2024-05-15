@@ -1,5 +1,11 @@
 ### Changelog
 
+#### [1.2.0](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/compare/1.1.2...1.2.0)
+
+> 15 May 2024
+
+- Use Node 18 [`#6`](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/pull/6)
+
 #### [1.1.2](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/compare/1.1.1...1.1.2)
 
 > 26 June 2023
