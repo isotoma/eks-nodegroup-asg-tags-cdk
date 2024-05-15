@@ -1,4 +1,5 @@
-import * as AWS from 'aws-sdk';
+import { AutoScaling } from '@aws-sdk/client-auto-scaling';
+import { EKS } from '@aws-sdk/client-eks';
 import * as utils from './utils';
 
 interface ResourceProperties {
@@ -60,14 +61,12 @@ const loadTags = (tagsJson: string): Tags => {
 };
 
 const findAsgName = async (clusterName: string, nodegroupName: string): Promise<string> => {
-    const eks = new AWS.EKS();
+    const eks = new EKS();
 
-    const describeNodegroupResponse = await eks
-        .describeNodegroup({
-            clusterName,
-            nodegroupName,
-        })
-        .promise();
+    const describeNodegroupResponse = await eks.describeNodegroup({
+        clusterName,
+        nodegroupName,
+    });
 
     const asgName = describeNodegroupResponse.nodegroup?.resources?.autoScalingGroups?.[0]?.name;
 
@@ -79,7 +78,7 @@ const findAsgName = async (clusterName: string, nodegroupName: string): Promise<
 };
 
 const tagAsg = async (asgName: string, tags: Tags): Promise<void> => {
-    const autoScaling = new AWS.AutoScaling();
+    const autoScaling = new AutoScaling();
 
     const tagsToApply = [];
 
@@ -97,15 +96,13 @@ const tagAsg = async (asgName: string, tags: Tags): Promise<void> => {
         return;
     }
 
-    await autoScaling
-        .createOrUpdateTags({
-            Tags: tagsToApply,
-        })
-        .promise();
+    await autoScaling.createOrUpdateTags({
+        Tags: tagsToApply,
+    });
 };
 
 const untagAsg = async (asgName: string, tagKeys: Array<string>): Promise<void> => {
-    const autoScaling = new AWS.AutoScaling();
+    const autoScaling = new AutoScaling();
 
     const tagsToDelete = [];
 
@@ -123,11 +120,9 @@ const untagAsg = async (asgName: string, tagKeys: Array<string>): Promise<void> 
         return;
     }
 
-    await autoScaling
-        .deleteTags({
-            Tags: tagsToDelete,
-        })
-        .promise();
+    await autoScaling.deleteTags({
+        Tags: tagsToDelete,
+    });
 };
 
 const handleCreate = async (event: utils.CreateEvent<ResourceProperties>): Promise<utils.Response> => {
