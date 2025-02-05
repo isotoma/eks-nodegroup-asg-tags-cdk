@@ -47,7 +47,7 @@ class NodegroupAsgTagsProvider extends Construct {
 
         const handler = new lambda.Function(this, 'Handler', {
             code: lambda.Code.fromAsset(pathlib.join(__dirname, 'provider')),
-            runtime: lambda.Runtime.NODEJS_22_X,
+            runtime: new lambda.Runtime('nodejs22.x', lambda.RuntimeFamily.NODEJS),
             handler: 'index.onEvent',
             timeout: Duration.seconds(30),
         });
