@@ -1,5 +1,11 @@
 ### Changelog
 
+#### [1.2.2](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/compare/1.2.1...1.2.2)
+
+> 5 February 2025
+
+- Use Node 22 regardless of CDK version known runtimes [`#8`](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/pull/8)
+
 #### [1.2.1](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/compare/1.2.0...1.2.1)
 
 > 5 February 2025
