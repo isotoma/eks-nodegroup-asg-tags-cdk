@@ -1,5 +1,11 @@
 ### Changelog
 
+#### [1.2.1](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/compare/1.2.0...1.2.1)
+
+> 5 February 2025
+
+- Update runtime to lambda.Runtime.NODEJS_22_X [`#7`](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/pull/7)
+
 #### [1.2.0](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/compare/1.1.2...1.2.0)
 
 > 15 May 2024
