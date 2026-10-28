@@ -1,5 +1,12 @@
 ### Changelog
 
+#### [1.3.0](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/compare/1.2.2...1.3.0)
+
+> 28 October 2026
+
+- DEVOPS-3211: Publish via npm trusted publishing and move CI to Node 24 [`#16`](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/pull/16)
+- Bump aws-cdk-lib from 2.63.0 to 2.177.0 [`#9`](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/pull/9)
+
 #### [1.2.2](https://github.com/isotoma/eks-nodegroup-asg-tags-cdk/compare/1.2.1...1.2.2)
 
 > 5 February 2025
